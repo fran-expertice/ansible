@@ -1,10 +1,10 @@
 ---
-- name: Instalar nmap
+- name: Desinstalar nmap
   hosts: all
 
   tasks:
 
-  - name: Instalar nmap
+  - name: Desinstalar nmap
     yum:
      name: nmap
      state: absent
