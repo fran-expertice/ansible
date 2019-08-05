@@ -5,10 +5,19 @@
 
   tasks:
 
+  - name: Instalar firewalld
+    yum:
+      name: firewalld
+      state: present
+
+  - name: Instalar nfs-utils
+    yum:
+      name: nfs-utils
+      state: present
+
   - name: Permitir nfs en el firewall
     firewalld:
       service: nfs
       permanent: yes
       state: enabled
-
 
