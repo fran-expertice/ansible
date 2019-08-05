@@ -1,0 +1,11 @@
+---
+- name: Instalar nmap
+  hosts: all
+
+  tasks:
+
+  - name: Instalar nmap
+    yum:
+     name: nmap
+     state: absent
+
