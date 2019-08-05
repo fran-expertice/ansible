@@ -1,0 +1,10 @@
+---
+- name: Copiar carpeta prueba
+  hosts: all
+
+  tasks:
+
+  - name: Copiar carpeta prueba a sistemas remotos
+    copy:
+      src: /prueba/
+      dest: /prueba
