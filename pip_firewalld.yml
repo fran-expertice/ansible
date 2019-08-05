@@ -1,0 +1,12 @@
+---
+
+- name: Instalar module firewalld
+  hosts: all
+
+  tasks:
+
+  - name: Instalar module firewalld
+    pip:
+      name: firewalld
+
+
