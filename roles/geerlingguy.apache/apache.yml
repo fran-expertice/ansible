@@ -2,8 +2,7 @@
 
     - hosts: web
       vars_files:
-        - /vars/main.yml
+        - vars/main.yml
       roles:
         - { role: geerlingguy.apache }
-
 

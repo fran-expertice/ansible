@@ -1,0 +1,10 @@
+---
+- name: Listar Paquetes
+  hosts: all
+
+  tasks:
+
+  - name: List ansible packages and register result to print with debug later.
+    yum:
+     list: ansible
+     register: result
